@@ -1,21 +1,11 @@
 import { NgModule } from '@angular/core'
 import { BootstrapCoreModule } from '../core'
-import {
-  ClearfixDirective,
-  ColumnXsDirective,
-  ColumnSmDirective,
-  ColumnMdDirective,
-  ColumnLgDirective,
-  RowDirective
-} from './directives'
+import { COLUMN_DIRECTIVES, ClearfixDirective, RowDirective } from './directives'
 
 @NgModule({
   declarations: [
+    COLUMN_DIRECTIVES,
     ClearfixDirective,
-    ColumnXsDirective,
-    ColumnSmDirective,
-    ColumnMdDirective,
-    ColumnLgDirective,
     RowDirective
   ],
   imports: [
@@ -23,11 +13,9 @@ import {
   ],
   exports: [
     BootstrapCoreModule,
+
+    COLUMN_DIRECTIVES,
     ClearfixDirective,
-    ColumnXsDirective,
-    ColumnSmDirective,
-    ColumnMdDirective,
-    ColumnLgDirective,
     RowDirective
   ],
 })
