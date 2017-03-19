@@ -19,6 +19,4 @@ import { COLUMN_DIRECTIVES, ClearfixDirective, RowDirective } from './directives
     RowDirective
   ],
 })
-export class BootstrapGridModule {
-
-}
+export class BootstrapGridModule { }

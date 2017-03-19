@@ -15,6 +15,4 @@ import { BootstrapTypographyModule } from './typography'
     BootstrapTypographyModule
   ],
 })
-export class BootstrapModule {
-
-}
+export class BootstrapModule { }

@@ -9,6 +9,4 @@ import { ContainerDirective } from './directives'
     ContainerDirective
   ],
 })
-export class BootstrapCoreModule {
-
-}
+export class BootstrapCoreModule { }
