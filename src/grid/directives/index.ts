@@ -1,3 +1,4 @@
+export * from './clearfix.directive'
 export * from './column-xs.directive'
 export * from './column-sm.directive'
 export * from './column-md.directive'
