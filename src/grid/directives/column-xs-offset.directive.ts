@@ -1,5 +1,5 @@
 import { Directive, Input, HostBinding } from '@angular/core'
-import { toNumber } from '../utils'
+import { toNumber, columnNumStr } from '../utils'
 
 @Directive({
   selector: '[bsColXsOffset]'
@@ -8,7 +8,7 @@ export class ColumnXsOffsetDirective {
   private _colXsOffset: number
 
   @Input()
-  set bsColXsOffset(value: string | number | null) {
+  set bsColXsOffset(value: columnNumStr | number | null) {
     this._colXsOffset = toNumber(value)
   }
 

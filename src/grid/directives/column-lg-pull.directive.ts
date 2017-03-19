@@ -1,5 +1,5 @@
 import { Directive, Input, HostBinding } from '@angular/core'
-import { toNumber } from '../utils'
+import { toNumber, columnNumStr } from '../utils'
 
 @Directive({
   selector: '[bsColLgPull]'
@@ -8,7 +8,7 @@ export class ColumnLgPullDirective {
   private _colLgPull: number
 
   @Input()
-  set bsColLgPull(value: string | number | null) {
+  set bsColLgPull(value: columnNumStr | number | null) {
     this._colLgPull = toNumber(value)
   }
 

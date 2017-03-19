@@ -1,5 +1,5 @@
 import { Directive, Input, HostBinding } from '@angular/core'
-import { toNumber } from '../utils'
+import { toNumber, columnNumStr } from '../utils'
 
 @Directive({
   selector: '[bsColXsPush]'
@@ -8,7 +8,7 @@ export class ColumnXsPushDirective {
   private _colXsPush: number
 
   @Input()
-  set bsColXsPush(value: string | number | null) {
+  set bsColXsPush(value: columnNumStr | number | null) {
     this._colXsPush = toNumber(value)
   }
 

@@ -5,7 +5,7 @@ import { Directive, Input, HostBinding } from '@angular/core'
 })
 export class TextAlignDirective {
   @Input()
-  bsTextAlign: string | null
+  bsTextAlign: 'left' | 'center' | 'right' | 'justify' | null
 
   @HostBinding('class.text-left')
   get hasTextLeftClass(): boolean {

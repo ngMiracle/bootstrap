@@ -5,7 +5,7 @@ import { Directive, Input, HostBinding } from '@angular/core'
 })
 export class ContainerDirective {
   @Input()
-  bsContainer: string | null
+  bsContainer: 'fluid' | null
 
   @HostBinding('class.container')
   get hasContainerClass(): boolean {

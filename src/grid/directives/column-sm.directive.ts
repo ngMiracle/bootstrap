@@ -1,5 +1,5 @@
 import { Directive, Input, HostBinding } from '@angular/core'
-import { toNumber } from '../utils'
+import { toNumber, columnNumStr } from '../utils'
 
 @Directive({
   selector: '[bsColSm]'
@@ -8,7 +8,7 @@ export class ColumnSmDirective {
   private _colSm: number
 
   @Input()
-  set bsColSm(value: string | number | null) {
+  set bsColSm(value: columnNumStr | number | null) {
     this._colSm = toNumber(value)
   }
 
