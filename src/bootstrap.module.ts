@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core'
 import { BootstrapCoreModule } from './core'
+import { BootstrapGridModule } from './grid'
 
 @NgModule({
   imports: [
-    BootstrapCoreModule
+    BootstrapCoreModule,
+    BootstrapGridModule
   ],
   exports: [
-    BootstrapCoreModule
+    BootstrapCoreModule,
+    BootstrapGridModule
   ],
 })
 export class BootstrapModule {
