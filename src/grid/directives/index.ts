@@ -8,15 +8,26 @@ import { ColumnSmOffsetDirective } from './column-sm-offset.directive'
 import { ColumnMdOffsetDirective } from './column-md-offset.directive'
 import { ColumnLgOffsetDirective } from './column-lg-offset.directive'
 
+import { ColumnXsPushDirective } from './column-xs-push.directive'
+import { ColumnSmPushDirective } from './column-sm-push.directive'
+import { ColumnMdPushDirective } from './column-md-push.directive'
+import { ColumnLgPushDirective } from './column-lg-push.directive'
+
 export const COLUMN_DIRECTIVES = [
   ColumnXsDirective,
   ColumnSmDirective,
   ColumnMdDirective,
   ColumnLgDirective,
+
   ColumnXsOffsetDirective,
   ColumnSmOffsetDirective,
   ColumnMdOffsetDirective,
-  ColumnLgOffsetDirective
+  ColumnLgOffsetDirective,
+
+  ColumnXsPushDirective,
+  ColumnSmPushDirective,
+  ColumnMdPushDirective,
+  ColumnLgPushDirective
 ]
 
 export {
@@ -24,10 +35,16 @@ export {
   ColumnSmDirective,
   ColumnMdDirective,
   ColumnLgDirective,
+
   ColumnXsOffsetDirective,
   ColumnSmOffsetDirective,
   ColumnMdOffsetDirective,
-  ColumnLgOffsetDirective
+  ColumnLgOffsetDirective,
+
+  ColumnXsPushDirective,
+  ColumnSmPushDirective,
+  ColumnMdPushDirective,
+  ColumnLgPushDirective
 }
 
 export * from './clearfix.directive'
