@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core'
 import { BootstrapCoreModule } from '../core'
-import { RowDirective } from './directives'
+import { ColumnDirective, RowDirective } from './directives'
 
 @NgModule({
   declarations: [
+    ColumnDirective,
     RowDirective
   ],
   imports: [
@@ -11,6 +12,7 @@ import { RowDirective } from './directives'
   ],
   exports: [
     BootstrapCoreModule,
+    ColumnDirective,
     RowDirective
   ],
 })
