@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BootstrapCoreModule } from '../core'
-import { ColumnDirective, RowDirective } from './directives'
+import { ColumnXsDirective, ColumnSmDirective, ColumnMdDirective, ColumnLgDirective, RowDirective } from './directives'
 
 @NgModule({
   declarations: [
-    ColumnDirective,
+    ColumnXsDirective,
+    ColumnSmDirective,
+    ColumnMdDirective,
+    ColumnLgDirective,
     RowDirective
   ],
   imports: [
@@ -12,7 +15,10 @@ import { ColumnDirective, RowDirective } from './directives'
   ],
   exports: [
     BootstrapCoreModule,
-    ColumnDirective,
+    ColumnXsDirective,
+    ColumnSmDirective,
+    ColumnMdDirective,
+    ColumnLgDirective,
     RowDirective
   ],
 })

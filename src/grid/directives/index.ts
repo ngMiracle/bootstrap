@@ -1,2 +1,5 @@
-export * from './column.directive'
+export * from './column-xs.directive'
+export * from './column-sm.directive'
+export * from './column-md.directive'
+export * from './column-lg.directive'
 export * from './row.directive'
