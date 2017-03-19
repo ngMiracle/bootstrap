@@ -2,13 +2,13 @@ import { Directive, Input, HostBinding } from '@angular/core'
 import { toNumber } from '../utils'
 
 @Directive({
-  selector: '[bsGridColLgOffset]'
+  selector: '[bsColLgOffset]'
 })
 export class ColumnLgOffsetDirective {
   private _colLgOffset: number
 
   @Input()
-  set bsGridColLgOffset(value: string | number | null) {
+  set bsColLgOffset(value: string | number | null) {
     this._colLgOffset = toNumber(value)
   }
 

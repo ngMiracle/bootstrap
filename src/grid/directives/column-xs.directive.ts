@@ -2,13 +2,13 @@ import { Directive, Input, HostBinding } from '@angular/core'
 import { toNumber } from '../utils'
 
 @Directive({
-  selector: '[bsGridColXs]'
+  selector: '[bsColXs]'
 })
 export class ColumnXsDirective {
   private _colXs: number
 
   @Input()
-  set bsGridColXs(value: string | number | null) {
+  set bsColXs(value: string | number | null) {
     this._colXs = toNumber(value)
   }
 

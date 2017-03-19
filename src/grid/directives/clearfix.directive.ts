@@ -1,7 +1,7 @@
 import { Directive, HostBinding } from '@angular/core'
 
 @Directive({
-  selector: '[bsGridClearfix]'
+  selector: '[bsClearfix]'
 })
 export class ClearfixDirective {
   @HostBinding('class.clearfix')

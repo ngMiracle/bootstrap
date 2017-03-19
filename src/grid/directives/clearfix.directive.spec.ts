@@ -6,7 +6,7 @@ import { ClearfixDirective } from './clearfix.directive';
 
 @Component({
   template: `
-    <div bsGridClearfix>Content</div>
+    <div bsClearfix>Content</div>
   `
 })
 class TestComponent { }

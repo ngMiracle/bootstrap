@@ -6,7 +6,7 @@ import { ColumnXsDirective } from './column-xs.directive';
 
 @Component({
   template: `
-    <div [bsGridColXs]="xs">Content</div>
+    <div [bsColXs]="xs">Content</div>
   `
 })
 class TestComponent {

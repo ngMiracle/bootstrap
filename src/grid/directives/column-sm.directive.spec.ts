@@ -6,7 +6,7 @@ import { ColumnSmDirective } from './column-sm.directive';
 
 @Component({
   template: `
-    <div [bsGridColSm]="sm">Content</div>
+    <div [bsColSm]="sm">Content</div>
   `
 })
 class TestComponent {

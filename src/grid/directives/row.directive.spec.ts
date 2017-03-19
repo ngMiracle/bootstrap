@@ -6,7 +6,7 @@ import { RowDirective } from './row.directive';
 
 @Component({
   template: `
-    <div bsGridRow>Content</div>
+    <div bsRow>Content</div>
   `
 })
 class TestComponent { }

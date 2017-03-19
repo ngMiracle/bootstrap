@@ -6,7 +6,7 @@ import { ColumnXsOffsetDirective } from './column-xs-offset.directive';
 
 @Component({
   template: `
-    <div [bsGridColXsOffset]="xsOffset">Content</div>
+    <div [bsColXsOffset]="xsOffset">Content</div>
   `
 })
 class TestComponent {

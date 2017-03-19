@@ -6,7 +6,7 @@ import { ColumnLgOffsetDirective } from './column-lg-offset.directive';
 
 @Component({
   template: `
-    <div [bsGridColLgOffset]="lgOffset">Content</div>
+    <div [bsColLgOffset]="lgOffset">Content</div>
   `
 })
 class TestComponent {

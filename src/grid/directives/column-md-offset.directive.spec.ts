@@ -6,7 +6,7 @@ import { ColumnMdOffsetDirective } from './column-md-offset.directive';
 
 @Component({
   template: `
-    <div [bsGridColMdOffset]="mdOffset">Content</div>
+    <div [bsColMdOffset]="mdOffset">Content</div>
   `
 })
 class TestComponent {

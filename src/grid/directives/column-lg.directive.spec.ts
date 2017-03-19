@@ -6,7 +6,7 @@ import { ColumnLgDirective } from './column-lg.directive';
 
 @Component({
   template: `
-    <div [bsGridColLg]="lg">Content</div>
+    <div [bsColLg]="lg">Content</div>
   `
 })
 class TestComponent {

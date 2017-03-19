@@ -6,7 +6,7 @@ import { ColumnMdDirective } from './column-md.directive';
 
 @Component({
   template: `
-    <div [bsGridColMd]="md">Content</div>
+    <div [bsColMd]="md">Content</div>
   `
 })
 class TestComponent {
