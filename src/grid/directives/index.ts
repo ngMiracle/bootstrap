@@ -13,6 +13,11 @@ import { ColumnSmPushDirective } from './column-sm-push.directive'
 import { ColumnMdPushDirective } from './column-md-push.directive'
 import { ColumnLgPushDirective } from './column-lg-push.directive'
 
+import { ColumnXsPullDirective } from './column-xs-pull.directive'
+import { ColumnSmPullDirective } from './column-sm-pull.directive'
+import { ColumnMdPullDirective } from './column-md-pull.directive'
+import { ColumnLgPullDirective } from './column-lg-pull.directive'
+
 export const COLUMN_DIRECTIVES = [
   ColumnXsDirective,
   ColumnSmDirective,
@@ -27,7 +32,12 @@ export const COLUMN_DIRECTIVES = [
   ColumnXsPushDirective,
   ColumnSmPushDirective,
   ColumnMdPushDirective,
-  ColumnLgPushDirective
+  ColumnLgPushDirective,
+
+  ColumnXsPullDirective,
+  ColumnSmPullDirective,
+  ColumnMdPullDirective,
+  ColumnLgPullDirective
 ]
 
 export {
@@ -44,7 +54,12 @@ export {
   ColumnXsPushDirective,
   ColumnSmPushDirective,
   ColumnMdPushDirective,
-  ColumnLgPushDirective
+  ColumnLgPushDirective,
+
+  ColumnXsPullDirective,
+  ColumnSmPullDirective,
+  ColumnMdPullDirective,
+  ColumnLgPullDirective
 }
 
 export * from './clearfix.directive'
