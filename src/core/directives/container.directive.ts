@@ -1,11 +1,11 @@
 import { Directive, Input, HostBinding } from '@angular/core'
 
 @Directive({
-  selector: '[bs-container]'
+  selector: '[bsContainer]'
 })
 export class ContainerDirective {
-  @Input('bs-container')
-  type: string | null
+  @Input()
+  bsContainer: string | null
 
   @HostBinding('class.container')
   get hasContainerClass(): boolean {
@@ -18,6 +18,6 @@ export class ContainerDirective {
   }
 
   private get isFluid(): boolean {
-    return this.type === 'fluid'
+    return this.bsContainer === 'fluid'
   }
 }
