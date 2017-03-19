@@ -20,6 +20,7 @@
       "prefix": "bs",
       "styles": [
         "styles.scss",
+        "assets/docs.css",
         "../node_modules/bootstrap/dist/css/bootstrap.css"
       ],
       "scripts": [],
