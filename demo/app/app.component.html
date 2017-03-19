@@ -47,13 +47,6 @@
   </div>
 </div>
 
-<h3>Fluid container</h3>
-<div bsContainer="fluid">
-  <div bsGridRow>
-    ...
-  </div>
-</div>
-
 <h3>Mobile and desktop</h3>
 <div bsContainer>
   <!-- Stack the columns on mobile by making one full-width and the other half-width -->
@@ -88,5 +81,44 @@
     <!-- Optional: clear the XS cols if their content doesn't match in height -->
     <div bsGridClearfix class="visible-xs-block"></div>
     <div bsGridColXs="6" bsGridColMd="4">.col-xs-6 .col-sm-4</div>
+  </div>
+</div>
+
+<h3>Column wrapping</h3>
+<div bsContainer>
+  <div bsGridRow>
+    <div bsGridColXs="9">.col-xs-9</div>
+    <div bsGridColXs="4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line
+      as one contiguous unit.</div>
+    <div bsGridColXs="6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+  </div>
+</div>
+
+<h3>Responsive column resets</h3>
+<div bsContainer>
+  <div bsGridRow>
+    <div bsGridColXs="6" bsGridColSm="3">.col-xs-6 .col-sm-3</div>
+    <div bsGridColXs="6" bsGridColSm="3">.col-xs-6 .col-sm-3</div>
+
+    <!-- Add the extra clearfix for only the required viewport -->
+    <div bsGridClearfix class="visible-xs-block"></div>
+
+    <div bsGridColXs="6" bsGridColSm="3">.col-xs-6 .col-sm-3</div>
+    <div bsGridColXs="6" bsGridColSm="3">.col-xs-6 .col-sm-3</div>
+  </div>
+</div>
+
+<h3>Offsetting columns</h3>
+<div bsContainer>
+  <div bsGridRow>
+    <div bsGridColMd="4">.col-md-4</div>
+    <div bsGridColMd="4" bsGridColMdOffset="4">.col-md-4 .col-md-offset-4</div>
+  </div>
+  <div bsGridRow>
+    <div bsGridColMd="3" bsGridColMdOffset="3">.col-md-3 .col-md-offset-3</div>
+    <div bsGridColMd="3" bsGridColMdOffset="3">.col-md-3 .col-md-offset-3</div>
+  </div>
+  <div bsGridRow>
+    <div bsGridColMd="6" bsGridColMdOffset="3">.col-md-6 .col-md-offset-3</div>
   </div>
 </div>
