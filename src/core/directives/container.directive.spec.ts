@@ -39,7 +39,7 @@ describe('ContainerDirective', () => {
     expect(debugElement.classes['container']).toBeTruthy()
   }))
 
-  it(`should have 'container-fluid' class when set to fluid`, async(() => {
+  it(`should have 'container-fluid' class when set to 'fluid'`, async(() => {
     component.containerType = 'fluid'
     fixture.detectChanges()
 
