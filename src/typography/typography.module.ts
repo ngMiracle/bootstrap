@@ -1,18 +1,26 @@
 import { NgModule } from '@angular/core'
-import { SmallDirective, LeadDirective, TextAlignDirective, TextNowrapDirective } from './directives'
+import {
+  SmallDirective,
+  LeadDirective,
+  TextAlignDirective,
+  TextNowrapDirective,
+  TextTransformDirective
+} from './directives'
 
 @NgModule({
   declarations: [
     SmallDirective,
     LeadDirective,
     TextAlignDirective,
-    TextNowrapDirective
+    TextNowrapDirective,
+    TextTransformDirective
   ],
   exports: [
     SmallDirective,
     LeadDirective,
     TextAlignDirective,
-    TextNowrapDirective
+    TextNowrapDirective,
+    TextTransformDirective
   ],
 })
 export class BootstrapTypographyModule { }
